@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header,
 .container {
     background-color: white;
@@ -19,8 +23,9 @@ header div {
     padding: 10px;
 }
 
-.logo {
+#logo {
     float: left;
+    height: 55px;
 }
 
 body {
@@ -28,17 +33,15 @@ body {
 }
 
 .container {
-    width: 960px;
+    width: 920px;
     margin: 30px auto;
 }
 
 .btn {
-    display: inline-block;
-
     border: 1px solid rgb(192, 194, 195);
     padding: 0.5rem;
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     color: rgb(200, 200, 200);
 }
@@ -51,7 +54,75 @@ hr {
     padding: 10px 50px;
 }
 
-.bg-blue {
+[class$='blue'] {
     background-color: rgb(96	170	228	);
     color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.first-item {
+    margin-bottom: 2rem;
+}
+
+.container-list {
+    margin: 40px;
+}
+
+[class^='label'] {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.check,
+.cross {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    text-align: center;
+
+    line-height: 20px;
+}
+
+.check {
+    border-color: lime;
+    color: lime;
+    vertical-align: middle;
+}
+
+.cross {
+    border-color: red;
+    color: red;
+}
+
+.label-pink {
+    background-color: rgb(202	106	159);
+}
+
+.label-orange {
+    background-color: rgb(230	161	75);
+}
+
+.label-purple {
+    background-color: rgb(149	118	221);
+}
+
+.label-green {
+    background-color: rgb(123	190	170);
+}
+
+.label-lime {
+    background-color: rgb(181	199	73);
+}
+
+.first-item ul li {
+    padding: 0.5rem 0;
+    vertical-align: middle;
 }
